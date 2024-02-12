@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* ========Body========= */
+body {
+    overflow-x: hidden !important;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2f2f91;
+    border-radius: 10px;
+}
+
+/* ========Body========== */
+/* ========Fonts========= */
+/* ========Fonts========= */
+/* ========Header Css ========= */
+.header {
+    width: 100%;
+    height: 200px;
+}
+
+#header-second {
+    width: 100%;
+    height: 100px;
+    display: none;
+}
+
+.header .header-inner-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-div {
+    width: 33.33%;
+}
+
+.first-div h1 {
+    color: red;
+    font-family: inherit;
+    letter-spacing: -2px;
+    font-size: 30px;
+}
+
+.logo-div {
+    width: 50px;
+    height: 80px;
+}
+
+.logo-img-div {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-img-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second-div {
+    width: 33.33%;
+}
+
+.second-div button {
+    border: none;
+    outline: none;
+    font-weight: inherit;
+    padding: 0.5rem 0.9rem;
+    background-color: transparent;
+    border-radius: 100px;
+    margin-right: 1rem;
+}
+
+.second-div button:hover {
+    background-color: WhiteSmoke;
+}
+
+.third-div {
+    width: 33.33%;
+}
+
+.third-div button {
+    border: none;
+    outline: none;
+    font-weight: inherit;
+    padding: 0.5rem 0.9rem;
+    background-color: transparent;
+    border-radius: 100px;
+    margin-right: 1rem;
+}
+
+.third-div button:hover {
+    background-color: WhiteSmoke;
+}
+
+.main-btn-div {
+    width: 85px;
+    border-radius: 40px;
+    height: 50px;
+    margin-left: 1rem;
+    border: 1px solid #ccc;
+}
+
+.main-btn-div:hover {
+    box-shadow: 0px 0px 6px #343838;
+}
+
+.third-div .users {
+    margin-left: 1rem;
+}
+
+.multiple-div-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #FF9E01; */
+    height: 100px;
+}
+
+.inner-button-div {
+    width: 70%;
+    margin: auto;
+    /* background-color: green; */
+    height: 50px;
+}
+
+.search-one {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-evenly;
+    background: white;
+    /*   height: 50px; */
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.search-one .search .label {
+    display: block;
+    font-size: 0.75rem;
+    color: #111111;
+    font-weight: bold;
+}
+
+.search-one .search-inputs .button {
+    border: none;
+    outline: none;
+    font-weight: inherit;
+    padding: 0.5rem 0.9rem;
+    background-color: transparent;
+    border-radius: 100px;
+    margin-right: 0rem;
+
+}
+
+.search-one .search-inputs {
+    /*   flex: 1 0 auto; */
+    padding: 5px 24px;
+}
+
+.search-one .button-i {
+    font-size: 16px;
+    width: 38px;
+    height: 38px;
+    border-radius: 30px;
+    border: none;
+    background: red;
+    color: white;
+    margin-right: 0rem;
+    margin-left: 1rem;
+}
+
+/* ========Search Button ========= */
+
+.search {
+    display: flex;
+    flex-flow: row no-wrap;
+    justify-content: space-evenly;
+    background: white;
+    /*   height: 50px; */
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+}
+
+.search .label {
+    display: block;
+    font-size: 0.75rem;
+    color: #111111;
+    font-weight: bold;
+}
+
+.search-inputs {
+    /*   flex: 1 0 auto; */
+    padding: 16px 24px;
+}
+
+.search-inputs:nth-child(1) {
+    flex: 1.5 0 0%;
+}
+
+.search-inputs:nth-child(2),
+.search-inputs:nth-child(3) {
+    flex: 1 0 0%;
+}
+
+.search-inputs:nth-child(4) {
+    flex: 0.85 0 0%;
+}
+
+.search-inputs input {
+    border: none;
+    display: block;
+}
+
+.search-button {
+    flex: 0 0 auto;
+    padding: 8px 8px 8px 0;
+}
+
+.search-button button {
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background: red;
+    color: white;
+    margin-top: 4px;
+}
+.open-div {
+    left: 230px;
+    display: none;
+    width: 520px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    top: 190px;
+    z-index: 1;
+    border-radius: 50px;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+  }
+  
+  .open-div.open {
+    display: block;
+  }
+  .open-div h6{
+    margin-top: 50px;
+    padding-left: 1rem;
+    font-weight: 700;
+  }
+  .map-div{
+    width: 140px;
+    height: 130px;
+  }
+  .map-img-div{
+    width: 100%;
+    height: 100%;
+  }
+  .map-img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  .map-img-div img:hover{
+    cursor: pointer;
+    border: 1px solid #000;
+  }
+/* ========Search Button ========= */
+
+/* ========Header Css========== */
+/* ========Navbar Css========== */
+.nav-tabs .nav-link,
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    width: 100px;
+    height: 90px;
+    border: none;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    border-bottom: 1px solid #000;
+    font-weight: bold;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+.nav-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tb-div h5 {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.main-card-div {
+    width: 300px;
+    height: 300px;
+}
+
+.card {
+    border: none;
+}
+
+.card-div {
+    width: 100%;
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 0px;
+}
+.card-body p{
+    margin-bottom: 0px;
+}
+/* ========Navbar Css========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========MEDIA QUERY OPEN====== */
+@media (min-width:1600px) and (min-width:1920px) and (min-width:2560px) and (max-width:1366px) and (max-width:1280px) and (max-width:1024px) {}
+
+@media only screen and (min-width:1600px) {}
+
+@media only screen and (min-width:1400px) {}
+
+@media only screen and (min-width:1440) {}
+
+@media only screen and (min-width:1920px) {}
+
+@media only screen and (min-width:2560px) {}
+
+/* ==========MEDIA QUERY CLOSED === */
+/* ==========Max Media Queries Open   === */
+@media only screen and (max-width:1366px) {}
+
+@media only screen and (max-width:1280px) {}
+
+@media only screen and (max-width:1024px) {}
+
+@media only screen and (max-width:820px) {}
+
+@media only screen and (max-width:768px) {}
+
+@media only screen and (max-width:600px) {}
+
+@media only screen and (max-width:540px) {}
+
+@media only screen and (max-width:414px) {}
+
+@media only screen and (max-width:390px) {}
+
+@media only screen and (max-width:375px) {}
+
+@media only screen and (max-width:360px) {}
+
+@media only screen and (max-width:320px) {}
+
+@media only screen and (max-width:280px) {}
+
+/* ==========Max Media Queries Closed === */

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =========================Bootstrap css======================== -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- =========================Font Awesome======================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- =========================Custom css=========================== -->
+    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+
+    <title>AirBnb | Hme</title>
+</head>
+
+<body>
+    <!-- =========================Header=========================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner-div">
+                <div class="first-div d-flex align-items-center">
+                    <div class="logo-div">
+                        <div class="logo-img-div">
+                            <img src="./assets/images/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h1>airbnb</h1>
+                    </div>
+                </div>
+                <div class="second-div">
+                    <button>Stays</button>
+                    <button>Experiences</button>
+                    <button>Online Experiences</button>
+                </div>
+                <div class="third-div d-flex justify-content-end align-items-center">
+                    <div><button>Airbnb your home</button></div>
+                    <div><i class="fa-solid fa-globe"></i></div>
+                    <div>
+                        <div class="d-flex main-btn-div justify-content-center align-items-center">
+                            <div><i class="fa-solid fa-bars"></i></div>
+                            <div class="users"><i class="fa-solid fa-user"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================Multiple Button================== -->
+        <div class="multiple-div-button pb-2">
+            <div class="inner-button-div">
+                <form class="search">
+                    <div class="search-inputs position-relative" id="searchInputsContainer">
+                        <label for="location">
+                            <div class="label">Where</div>
+                            <input name="location" id="location" placeholder="Search destinations" />
+                        </label>
+                    </div>
+                    <div class="position-absolute open-div">
+                       <div class="container" style="padding: 20px;">
+                        <div class="row">
+                            <h6>Search by region</h6>
+                            <div class="col-lg-4 mt-3">
+                                <div class="map-div">
+                                    <div class="map-img-div">
+                                        <img src="./assets/images/mapImg2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <span>I’m flexible</span>
+                            </div>
+                            <div class="col-lg-4 mt-3">
+                                <div class="map-div">
+                                    <div class="map-img-div">
+                                        <img src="./assets/images/mapImg.webp" alt="">
+                                    </div>
+                                </div>
+                                <span>Middle East</span>
+                            </div>
+                            <div class="col-lg-4 mt-3">
+                                <div class="map-div">
+                                    <div class="map-img-div">
+                                        <img src="./assets/images/mapImg3.webp" alt="">
+                                    </div>
+                                </div>
+                                <span>United Arab Emirate</span>
+                            </div>
+                            <div class="col-lg-4 mt-3">
+                                <div class="map-div">
+                                    <div class="map-img-div">
+                                        <img src="./assets/images/mapImg4.webp" alt="">
+                                    </div>
+                                </div>
+                                <span>Europe</span>
+                            </div>
+                            <div class="col-lg-4 mt-3">
+                                <div class="map-div">
+                                    <div class="map-img-div">
+                                        <img src="./assets/images/mapImg5.webp" alt="">
+                                    </div>
+                                </div>
+                                <span>United Kingdom</span>
+                            </div>
+                            <div class="col-lg-4 mt-3">
+                                <div class="map-div">
+                                    <div class="map-img-div">
+                                        <img src="./assets/images/mapImg6.webp" alt="">
+                                    </div>
+                                </div>
+                                <span>
+                                    Southeast Asia
+                                </span>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                    <div class="search-inputs">
+                        <label for="check-in">
+                            <div class="label">Check in</div>
+                            <input name="check-in" id="check-in" placeholder="Add dates" />
+                        </label>
+                    </div>
+                    <div class="search-inputs">
+                        <label for="check-out">
+                            <div class="label">Check out</div>
+                            <input name="check-out" id="check-out" placeholder="Add dates" />
+                        </label>
+                    </div>
+                    <div class="search-inputs">
+                        <label for="guests">
+                            <div class="label">Who</div>
+                            <input name="guests" id="guests" placeholder="Add guests" />
+                        </label>
+                    </div>
+                    <div class="search-button">
+                        <button onclick="preventDefault()"><i class="fas fa-search fa-xs"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- =========================Multiple Button================== -->
+    </header>
+    <header class="header" id="header-second">
+        <div class="container">
+            <div class="header-inner-div">
+                <div class="first-div d-flex align-items-center">
+                    <div class="logo-div">
+                        <div class="logo-img-div">
+                            <img src="./assets/images/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <h1>airbnb</h1>
+                    </div>
+                </div>
+                <div class="second-div">
+                    <form class="search-one">
+                        <div class="search-inputs">
+                            <button class="button">Anywhere</button>|
+                            <button class="button">Anywhere</button>
+                            <button class="button">Anywhere</button>
+                            <button class="button-i"><i class="fas fa-search fa-xs"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="third-div d-flex justify-content-end align-items-center">
+                    <div><button>Airbnb your home</button></div>
+                    <div><i class="fa-solid fa-globe"></i></div>
+                    <div>
+                        <div class="d-flex main-btn-div justify-content-center align-items-center">
+                            <div><i class="fa-solid fa-bars"></i></div>
+                            <div class="users"><i class="fa-solid fa-user"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <!-- =========================Multiple Button================== -->
+    <!-- =========================Header=========================== -->
+    <!-- =========================Banner=========================== -->
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                    role="tab" aria-controls="home" aria-selected="true">
+                    <div class="d-flex flex-column tb-div">
+                        <div class="nav-img">
+                            <img src="./assets/images/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>National Park</h5>
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false">
+                    <div class="d-flex flex-column tb-div">
+                        <div class="nav-img">
+                            <img src="./assets/images/1.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Trending</h5>
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                    role="tab" aria-controls="contact" aria-selected="false">
+                    <div class="d-flex flex-column tb-div">
+                        <div class="nav-img">
+                            <img src="./assets/images/2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>OMG!</h5>
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="earth-tab" data-bs-toggle="tab" data-bs-target="#earth" type="button"
+                    role="tab" aria-controls="earth" aria-selected="false">
+                    <div class="d-flex flex-column tb-div">
+                        <div class="nav-img">
+                            <img src="./assets/images/3.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Earth Home</h5>
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="lake-tab" data-bs-toggle="tab" data-bs-target="#lake" type="button"
+                    role="tab" aria-controls="lake" aria-selected="false">
+                    <div class="d-flex flex-column tb-div">
+                        <div class="nav-img">
+                            <img src="./assets/images/4.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Lake</h5>
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="beachfront-tab" data-bs-toggle="tab" data-bs-target="#beachfront"
+                    type="button" role="tab" aria-controls="beachfront" aria-selected="false">
+                    <div class="d-flex flex-column tb-div">
+                        <div class="nav-img">
+                            <img src="./assets/images/4.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Beachfront</h5>
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="amazingview-tab" data-bs-toggle="tab" data-bs-target="#amazingview"
+                    type="button" role="tab" aria-controls="amazingview" aria-selected="false">
+                    <div class="d-flex flex-column tb-div">
+                        <div class="nav-img">
+                            <img src="./assets/images/5.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Amazing view</h5>
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="tinghouse-tab" data-bs-toggle="tab" data-bs-target="#tinghouse"
+                    type="button" role="tab" aria-controls="tinghouse" aria-selected="false">
+                    <div class="d-flex flex-column tb-div">
+                        <div class="nav-img">
+                            <img src="./assets/images/5.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Ting house</h5>
+                        </div>
+                    </div>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="bed&breakfasts-tab" data-bs-toggle="tab" data-bs-target="#bed&breakfasts"
+                    type="button" role="tab" aria-controls="bed&breakfasts" aria-selected="false">
+                    <div class="d-flex flex-column tb-div">
+                        <div class="nav-img">
+                            <img src="./assets/images/6.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5>Bed & breakfasts</h5>
+                        </div>
+                    </div>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container mt-4">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/9.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/10.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/11.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/12.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/9.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/10.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/11.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/12.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/9.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/10.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/11.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/12.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/9.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/10.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/11.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" style="width: 18rem;">
+                                <div class="main-card-div">
+                                    <div class="card-div">
+                                        <img src="./assets/images/12.webp" class="card-img-top" alt="...">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Sosan, India</h5>
+                                    <p class="card-text">1 mile to Great Himalayan National Park<br>
+                                        Mar 17 - 22</p>
+                                    <span><strong>$12</strong> night</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
+            <div class="tab-pane fade" id="earth" role="tabpanel" aria-labelledby="earth-tab"></div>
+            <div class="tab-pane fade" id="lake" role="tabpanel" aria-labelledby="lake-tab"></div>
+            <div class="tab-pane fade" id="beachfront" role="tabpanel" aria-labelledby="beachfront-tab"></div>
+            <div class="tab-pane fade" id="amazingview" role="tabpanel" aria-labelledby="amazingview-tab"></div>
+            <div class="tab-pane fade" id="tinghouse" role="tabpanel" aria-labelledby="tinghouse-tab"></div>
+            <div class="tab-pane fade" id="bed&breakfasts" role="tabpanel" aria-labelledby="bed&breakfasts-tab"></div>
+        </div>
+    </div>
+    <!-- =========================Banner=========================== -->
+
+
+
+
+
+
+
+
+
+    <!-- =========================jQuery============================== -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <!-- =========================Bootstrap js======================== -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- =========================Custom js=========================== -->
+    <script src="./assets/js/main.js"></script>
+
+
+
+</body>
+
+</html>
