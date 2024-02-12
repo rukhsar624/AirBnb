@@ -1,6 +1,5 @@
 window.addEventListener('scroll', function () {
     var headerSecond = document.getElementById('header-second');
-
     // Adjust the scroll threshold as needed
     var scrollThreshold = 100;
 
