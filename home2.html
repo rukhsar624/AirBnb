@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+    <title>Document</title>
+</head>
+<style>
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.range {
+  border-radius: 50%;
+  display: table;
+  height: 186px; /* $range__size */
+  position: relative;
+  width: 186px; /* $range__size */
+  
+  input {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .dial {
+    background-color: #FFF;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    height: 26px; /* $dial__size */
+    margin-left: -13px; /* -$dial__size/2 */
+    position: absolute;
+    top: -13px; /* -$dial__size/2 */
+    transform: translateX(93px) translateY(5px); /* translateX(#{$range__size/2}) translateY(#{$range__width/2}) */
+    width: 26px; /* $dial__size */
+    z-index: 40;
+    &:focus {
+      outline: 0;
+    }
+  }
+  .info {
+    background-color: #FFF;
+    border-radius: 50%;
+    bottom: 10px; /* $range__width */
+    color: #333; /* $text__color */
+    cursor: default;
+    display: table-cell;
+    font: 400 16px/1.1 'Roboto', sans-serif;
+    left: 10px; /* $range__width */
+    padding-top: 22%;
+    position: absolute;
+    right: 10px; /* $range__width */
+    text-align: center;
+    top: 10px; /* $range__width */
+    user-select: none;
+    text-transform: uppercase;
+    z-index: 30;
+  }
+  .count {
+    color: #F27935; /* $main__color */
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+  }
+}
+
+.slice {
+  border-radius: 186px 0 0 186px; /* $range__size */
+  background-color: #F27935; /* $main__color */
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  user-select: none;
+  width: 50%;
+  z-index: 10;
+  &.right {
+    border-radius: 0 186px 186px 0; /*  $range__size */
+    right: 0;
+    .blocker {
+      left: 0;
+      right: auto;
+      transform-origin: 0 25%;
+    }
+  }
+  .blocker {
+    background-color: #eee;
+    height: 200%;
+    position: absolute;
+    right: 0;
+    transform-origin: 100% 25%;
+    width: 200%;
+  }
+}
+
+</style>
+<body>
+    <div class="range">
+        <input type="range" name="points" min="0" max="850" value="" class="count">
+        <div class="slice left">
+          <div class="blocker"></div>
+        </div>
+        <div class="slice right">
+          <div class="blocker"></div>
+        </div>
+        <span class="info">
+            <span class="count">0</span>
+            points
+        </span>
+        <div class="dial" tabindex="0"></div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="">
+        var position,
+  lastPosition,
+  canSlide = false,
+  range = $(".range"),
+  input = range.find("input"),
+  maxPoints = input.attr("max"),
+  minPoints = input.attr("min"),
+  prevVal = input.attr("min");
+
+range.on("mousedown touchstart", rangeSliderInit);
+range.on("mousemove touchmove", rangeSliderUpdate);
+range.on("mouseup touchend", rangeSliderStop);
+
+function pointerEvents(e) {
+  var pos = { x: 0, y: 0 };
+
+  if (
+    e.type == "touchstart" ||
+    e.type == "touchmove" ||
+    e.type == "touchend" ||
+    e.type == "touchcancel"
+  ) {
+    var touch = e.changedTouches[0];
+    pos.x = touch.pageX;
+    pos.y = touch.pageY;
+  } else if (
+    e.type == "mousedown" ||
+    e.type == "mouseup" ||
+    e.type == "mousemove" ||
+    e.type == "mouseover" ||
+    e.type == "mouseout" ||
+    e.type == "mouseenter" ||
+    e.type == "mouseleave"
+  ) {
+    pos.x = e.pageX;
+    pos.y = e.pageY;
+  }
+
+  return pos;
+}
+
+function rangeSliderInit() {
+  canSlide = true;
+}
+
+function rangeSliderUpdate(e) {
+  if (!canSlide || maxPoints == 0) return;
+
+  var position = pointerEvents(e),
+    dial = range.find(".dial"),
+    dialRadius = dial.width() / 2,
+    coords = {
+      x: position.x - range.offset().left,
+      y: position.y - range.offset().top
+    },
+    radius = range.width() / 2,
+    atan = Math.atan2(coords.x - radius, coords.y - radius),
+    deg = Math.ceil(-atan / (Math.PI / 180) + 180);
+
+  if (prevVal <= 1 && lastPosition - position.x >= 0) deg = 0;
+  if (prevVal >= 359 && lastPosition - position.x <= 0) deg = 360;
+
+  var x =
+    Math.ceil((radius - 5) * Math.sin(deg * Math.PI / 180)) + radius + "px",
+    y =
+      Math.ceil((radius - 5) * -Math.cos(deg * Math.PI / 180)) + radius + "px",
+    points = Math.ceil(deg * maxPoints / 360);
+
+  //move dial
+  dial.css({ transform: "translate(" + x + "," + y + ")" });
+
+  //show range progress
+  if (deg <= 180) {
+    range.find(".right .blocker").css({ transform: "rotate(" + deg + "deg)" });
+    range.find(".left .blocker").css({ transform: "rotate(0)" });
+  } else {
+    range.find(".right .blocker").css({ transform: "rotate(180deg" });
+    range
+      .find(".left .blocker")
+      .css({ transform: "rotate(" + (deg - 180) + "deg)" });
+  }
+
+  //show value
+  range.find(".count").text(points).val(points);
+
+  prevVal = deg;
+  lastPosition = position.x;
+}
+
+function rangeSliderStop() {
+  canSlide = false;
+}
+
+      </script>
+</body>
+</html>
