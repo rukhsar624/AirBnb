@@ -107,6 +107,7 @@ body::-webkit-scrollbar-thumb {
 
 .third-div {
     width: 33.33%;
+    /* width: 60%; */
 }
 
 .third-div button {
@@ -686,7 +687,7 @@ body::-webkit-scrollbar-thumb {
 /* calender css open */
 .open-div-second .nav {
     justify-content: center;
-    width: 40%;
+    width: 55%;
     margin: auto;
     background: WhiteSmoke;
     border-radius: 40px;
