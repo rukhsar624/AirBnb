@@ -7,7 +7,7 @@
     <!-- =========================Bootstrap css======================== -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <!-- =========================Swiper Slider======================== -->
-    <link rel="stylesheet" href="./assets/css/stylesheet.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.css">
     <!-- =========================wow js======================== -->
     <link rel="stylesheet" href="./assets/css/wow.css">
     <!-- =========================Font Awesome======================== -->
@@ -338,8 +338,10 @@
                                 <ul class="search-links">
                                     <li>
                                         <a href="" id="toggleDiv">
-                                            <h4>Where</h4>
-                                            <p>Search destinations</p>
+                                            <h4 style="margin-bottom: 0px;">Where</h4>
+                                            <!-- <p>Search destinations</p> -->
+                                            <input type="" placeholder="Search destinations"
+                                                style="font-size: calc(0.5em +0.3vw);color: #777;font-size: 13px;outline: none;border: none;">
                                         </a>
 
                                     </li>
@@ -358,7 +360,7 @@
                                     <li>
                                         <a href="" id="toggleDivlast">
                                             <h4>Who</h4>
-                                            <p>Add guests</p>
+                                            <p id="counterValue">Add guests</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -682,7 +684,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="calendar-events">
+                                                <!-- <div class="calendar-events"> -->
+                                                <div class="d-flex justify-content-start"
+                                                    style="margin-left: 5rem;padding-top: 2rem;">
+                                                    <button style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">Exact dates</button>
+                                                    <button style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">1 day</button>
+                                                    <button style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">2 days</button>
+                                                    <button style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">3 days</button>
+                                                    <button style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">7 days</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -712,7 +721,73 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                                    ...</div>
+                                    <h6 class="text-center mt-5">Stay for a month</h6>
+                                    <div class="d-flex justify-content-center flex-row">
+                                        <button
+                                            style="border :1px solid #ccc;outline: none;padding: 0.5rem 1.5rem; border-radius: 20px;background-color: transparent;margin: 5px;">Weekend</button>
+                                        <button
+                                            style="border :1px solid #ccc;outline: none;padding: 0.5rem 1.5rem; border-radius: 20px;background-color: transparent;margin: 5px;">Week</button>
+                                        <button
+                                            style="border :1px solid #ccc;outline: none;padding: 0.5rem 1.5rem; border-radius: 20px;background-color: transparent;margin: 5px;">Month</button>
+                                    </div>
+                                    <h5 class="text-center" style="color: #000;margin-top: 2rem;">
+                                        Go anytime
+                                    </h5>
+                                    <div class="container calender-div">
+                                        <div class="row swiper mySwiper">
+                                            <div class="col-lg-3 swiper-wrapper">
+                                                <div class="slider-div swiper-slide ">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>January</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>February</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>March</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>April</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>May</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>June</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>July</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>August</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>September</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>October</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>November</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>December</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div id="hiddenDivLast">
@@ -724,12 +799,12 @@
                                     </div>
                                     <div class="col-lg-6 d-flex justify-content-end align-items-center">
                                         <div class="quantity">
-                                            <a href="#" class="quantity__minus"><span span style="font-size: 13px;"><i
-                                                        class="fa-solid fa-minus"
-                                                        style="padding-top: 8px;"></i></span></a>
-                                            <input name="quantity" type="text" class="quantity__input" value="1">
-                                            <a href="#" class="quantity__plus"><span
-                                                    style="font-size: 20px;">+</span></a>
+                                            <a href="#" class="quantity__minus"
+                                                onclick="decrementValue('quantityInput', 'counterValue')">-</a>
+                                            <input name="quantity" type="text" class="quantity__input"
+                                                id="quantityInput" value="1">
+                                            <a href="#" class="quantity__plus"
+                                                onclick="incrementValue('quantityInput', 'counterValue')">+</a>
                                         </div>
                                     </div>
                                 </div>
@@ -740,12 +815,12 @@
                                     </div>
                                     <div class="col-lg-6 mt-4 d-flex justify-content-end align-items-center">
                                         <div class="quantity1">
-                                            <a href="#" class="quantity__minus1"><span span style="font-size: 13px;"><i
-                                                        class="fa-solid fa-minus"
-                                                        style="padding-top: 8px;"></i></span></a>
-                                            <input name="quantity1" type="text" class="quantity__input1" value="1">
-                                            <a href="#" class="quantity__plus1"><span
-                                                    style="font-size: 20px;">+</span></a>
+                                            <a href="#" class="quantity__minus1"
+                                                onclick="decrementValue('quantityInput1', 'counterValue')">-</a>
+                                            <input name="quantity1" type="text" class="quantity__input1"
+                                                id="quantityInput1" value="1">
+                                            <a href="#" class="quantity__plus1"
+                                                onclick="incrementValue('quantityInput1', 'counterValue')">+</a>
                                         </div>
                                     </div>
                                 </div>
@@ -756,12 +831,12 @@
                                     </div>
                                     <div class="col-lg-6 mt-4 d-flex justify-content-end align-items-center">
                                         <div class="quantity2">
-                                            <a href="#" class="quantity__minus2"><span span style="font-size: 13px;"><i
-                                                        class="fa-solid fa-minus"
-                                                        style="padding-top: 8px;"></i></span></a>
-                                            <input name="quantity2" type="text" class="quantity__input2" value="1">
-                                            <a href="#" class="quantity__plus2"><span
-                                                    style="font-size: 20px;">+</span></a>
+                                            <a href="#" class="quantity__minus2"
+                                                onclick="decrementValue('quantityInput2', 'counterValue')">-</a>
+                                            <input name="quantity2" type="text" class="quantity__input2"
+                                                id="quantityInput2" value="1">
+                                            <a href="#" class="quantity__plus2"
+                                                onclick="incrementValue('quantityInput2', 'counterValue')">+</a>
                                         </div>
                                     </div>
                                 </div>
@@ -772,12 +847,12 @@
                                     </div>
                                     <div class="col-lg-6 mt-4 d-flex justify-content-end align-items-center">
                                         <div class="quantity3">
-                                            <a href="#" class="quantity__minus3"><span span style="font-size: 13px;"><i
-                                                        class="fa-solid fa-minus"
-                                                        style="padding-top: 8px;"></i></span></a>
-                                            <input name="quantity3" type="text" class="quantity__input3" value="1">
-                                            <a href="#" class="quantity__plus3"><span
-                                                    style="font-size: 20px;">+</span></a>
+                                            <a href="#" class="quantity__minus3"
+                                                onclick="decrementValue('quantityInput3', 'counterValue')">-</a>
+                                            <input name="quantity3" type="text" class="quantity__input3"
+                                                id="quantityInput3" value="1">
+                                            <a href="#" class="quantity__plus3"
+                                                onclick="incrementValue('quantityInput3', 'counterValue')">+</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1317,6 +1392,35 @@
                 hiddenDiv.style.display = (hiddenDiv.style.display === 'none') ? 'block' : 'none';
             });
         });
+        // 
+        // Initial counter values
+        var counters = {
+            'quantityInput': 1,
+            'quantityInput1': 1,
+            'quantityInput2': 1,
+            'quantityInput3': 1
+        };
+
+        // Function to increment the counter value
+        function incrementValue(inputId, displayId) {
+            counters[inputId]++;
+            updateDisplay(displayId);
+        }
+
+        // Function to decrement the counter value
+        function decrementValue(inputId, displayId) {
+            if (counters[inputId] > 1) {
+                counters[inputId]--;
+                updateDisplay(displayId);
+            }
+        }
+
+        // Function to update the display
+        function updateDisplay(displayId) {
+            var total = counters['quantityInput'] + counters['quantityInput1'] + counters['quantityInput2'] + counters['quantityInput3'];
+            document.getElementById('counterValue').innerHTML = 'guests: ' + total;
+        }
+        // 
     </script>
 </body>
 

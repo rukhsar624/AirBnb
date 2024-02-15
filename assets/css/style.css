@@ -212,7 +212,25 @@
     .third-div button:hover {
         background-color: WhiteSmoke;
     }
+.calender-div .slider-div{
+    width: 120px !important;
+    height: 134px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.calender-div .slider-div i{
+    font-size: 30px;
+}
+.calender-div .slider-div h6{
+    font-size: 15px;
+}
+/* swiper slider css*/
 
+/* swiper slider css*/
     /* logo css */
     /* open div css */
     /* open div css */
