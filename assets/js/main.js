@@ -348,7 +348,7 @@ elements.forEach(element => {
 // swiper slider js
 var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 3,
-	spaceBetween: 30,
+	spaceBetween: 20,
 	loop: true,
 	pagination: {
 		el: ".swiper-pagination",
@@ -359,10 +359,10 @@ var swiper = new Swiper(".mySwiper", {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-	autoplay:
-	{
-		delay: 2000,
-	},
+	// autoplay:
+	// {
+	// 	delay: 2000,
+	// },
 	breakpoints: {
 		// when window width is >= 320px
 		768: {
@@ -411,9 +411,11 @@ var swiper = new Swiper(".mySwiper", {
 
 		},
 		1440:{
-			slidesPerView:12,
+			slidesPerView:6,
 			spaceBetween:10
 		}
 	}
 });
 // 
+// new swiper slider js open
+// new swiper slider js closed

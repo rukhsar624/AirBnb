@@ -666,8 +666,52 @@ body::-webkit-scrollbar-thumb {
 .card-div {
     width: 100%;
     height: 100%;
+    position: relative;
 }
-
+.guest{
+    position: absolute;
+    content: "";
+    top: 10px;
+    width: 100%;
+    height: 50px;
+    /* background-color: #00ff80; */
+    padding: 10px;
+}
+.guest-btn button{
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 0.2rem 1rem;
+}
+.guest-btn i{
+    color: #fff;
+    font-size: 20 px;
+}
+.filters-btn{
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 0.9rem 0.4rem;
+    width: 100px;
+    /* min-width: 70px; */
+    margin-top: 1rem;
+    border-radius: 15px;
+}
+.taxes{
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 0.9rem 0.4rem;
+    width: 250px;
+    /* min-width: 70px; */
+    margin-top: 1rem;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+.modal-header{
+    /* display: flex;
+    justify-content: space-around !important; */
+}
 .card img {
     width: 100%;
     height: 100%;

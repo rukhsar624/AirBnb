@@ -327,7 +327,6 @@
                             </switch>
                         </g>
                     </svg>
-
                 </div>
             </div>
             <div class="tab-content" id="pills-tabContent">
@@ -687,11 +686,21 @@
                                                 <!-- <div class="calendar-events"> -->
                                                 <div class="d-flex justify-content-start"
                                                     style="margin-left: 5rem;padding-top: 2rem;">
-                                                    <button style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">Exact dates</button>
-                                                    <button style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">1 day</button>
-                                                    <button style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">2 days</button>
-                                                    <button style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">3 days</button>
-                                                    <button style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">7 days</button>
+                                                    <button
+                                                        style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">Exact
+                                                        dates</button>
+                                                    <button
+                                                        style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">1
+                                                        day</button>
+                                                    <button
+                                                        style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">2
+                                                        days</button>
+                                                    <button
+                                                        style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">3
+                                                        days</button>
+                                                    <button
+                                                        style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">7
+                                                        days</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -859,7 +868,379 @@
                             </div>
                         </div>
                         <div id="hiddenDivThird" class="open-div-second">
+                            <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active btn-csmt" id="one-tab" data-bs-toggle="tab"
+                                        data-bs-target="#one" type="button" role="tab" aria-controls="one"
+                                        aria-selected="true">Dates</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link btn-csmt" id="two-tab" data-bs-toggle="tab"
+                                        data-bs-target="#two" type="button" role="tab" aria-controls="two"
+                                        aria-selected="false">Months</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link btn-csmt" id="three-tab" data-bs-toggle="tab"
+                                        data-bs-target="#three" type="button" role="tab" aria-controls="three"
+                                        aria-selected="false">Flexible</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="one" role="tabpanel"
+                                    aria-labelledby="one-tab">
+                                    <div class="cal-modal-container">
+                                        <div class="cal-modal">
+                                            <div id="calendar">
+                                                <div class="placeholder flatpickr-input" readonly="readonly"></div>
+                                                <div class="flatpickr-calendar animate inline" tabindex="-1"
+                                                    style="width: 2px;">
+                                                    <div class="flatpickr-months"><span
+                                                            class="flatpickr-prev-month flatpickr-disabled"><svg
+                                                                version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                viewBox="0 0 17 17">
+                                                                <g></g>
+                                                                <path
+                                                                    d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z">
+                                                                </path>
+                                                            </svg></span>
+                                                        <div class="flatpickr-month">
+                                                            <div class="flatpickr-current-month"><span
+                                                                    class="cur-month">February </span>
+                                                                <div class="numInputWrapper"><input
+                                                                        class="numInput cur-year" type="number"
+                                                                        tabindex="-1" aria-label="Year" min="2024"
+                                                                        max="2024" disabled=""><span
+                                                                        class="arrowUp"></span><span
+                                                                        class="arrowDown"></span></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="flatpickr-month">
+                                                            <div class="flatpickr-current-month"><span
+                                                                    class="cur-month">March </span>
+                                                                <div class="numInputWrapper"><input
+                                                                        class="numInput cur-year" type="number"
+                                                                        tabindex="-1" aria-label="Year" min="2024"
+                                                                        max="2024" disabled=""><span
+                                                                        class="arrowUp"></span><span
+                                                                        class="arrowDown"></span></div>
+                                                            </div>
+                                                        </div><span class="flatpickr-next-month"><svg version="1.1"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                viewBox="0 0 17 17">
+                                                                <g></g>
+                                                                <path
+                                                                    d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z">
+                                                                </path>
+                                                            </svg></span>
+                                                    </div>
+                                                    <div class="flatpickr-innerContainer">
+                                                        <div class="flatpickr-rContainer">
+                                                            <div class="flatpickr-weekdays">
+                                                                <div class="flatpickr-weekdaycontainer">
+                                                                    <span class="flatpickr-weekday">
+                                                                        S</span><span
+                                                                        class="flatpickr-weekday">M</span><span
+                                                                        class="flatpickr-weekday">T</span><span
+                                                                        class="flatpickr-weekday">W</span><span
+                                                                        class="flatpickr-weekday">T</span><span
+                                                                        class="flatpickr-weekday">F</span><span
+                                                                        class="flatpickr-weekday">S
+                                                                    </span>
+                                                                </div>
+                                                                <div class="flatpickr-weekdaycontainer">
+                                                                    <span class="flatpickr-weekday">
+                                                                        S</span><span
+                                                                        class="flatpickr-weekday">M</span><span
+                                                                        class="flatpickr-weekday">T</span><span
+                                                                        class="flatpickr-weekday">W</span><span
+                                                                        class="flatpickr-weekday">T</span><span
+                                                                        class="flatpickr-weekday">F</span><span
+                                                                        class="flatpickr-weekday">S
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="flatpickr-days" tabindex="-1"
+                                                                style="width: 2px;">
+                                                                <div class="dayContainer"><span
+                                                                        class="flatpickr-day prevMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="January 28, 2024">28</span><span
+                                                                        class="flatpickr-day prevMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="January 29, 2024">29</span><span
+                                                                        class="flatpickr-day prevMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="January 30, 2024">30</span><span
+                                                                        class="flatpickr-day prevMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="January 31, 2024">31</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 1, 2024">1</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 2, 2024">2</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 3, 2024">3</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 4, 2024">4</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 5, 2024">5</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 6, 2024">6</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 7, 2024">7</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 8, 2024">8</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 9, 2024">9</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 10, 2024">10</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 11, 2024">11</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 12, 2024">12</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 13, 2024">13</span><span
+                                                                        class="flatpickr-day today flatpickr-disabled"
+                                                                        aria-label="February 14, 2024"
+                                                                        aria-current="date">14</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 15, 2024">15</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 16, 2024">16</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 17, 2024">17</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 18, 2024">18</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 19, 2024">19</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 20, 2024">20</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 21, 2024">21</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 22, 2024">22</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 23, 2024">23</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 24, 2024">24</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 25, 2024">25</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 26, 2024">26</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 27, 2024">27</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 28, 2024">28</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="February 29, 2024">29</span><span
+                                                                        class="flatpickr-day nextMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="March 1, 2024">1</span><span
+                                                                        class="flatpickr-day nextMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="March 2, 2024">2</span></div>
+                                                                <div class="dayContainer"><span
+                                                                        class="flatpickr-day prevMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="February 25, 2024">25</span><span
+                                                                        class="flatpickr-day prevMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="February 26, 2024">26</span><span
+                                                                        class="flatpickr-day prevMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="February 27, 2024">27</span><span
+                                                                        class="flatpickr-day prevMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="February 28, 2024">28</span><span
+                                                                        class="flatpickr-day prevMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="February 29, 2024">29</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 1, 2024">1</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 2, 2024">2</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 3, 2024">3</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 4, 2024">4</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 5, 2024">5</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 6, 2024">6</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 7, 2024">7</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 8, 2024">8</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 9, 2024">9</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 10, 2024">10</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 11, 2024">11</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 12, 2024">12</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 13, 2024">13</span><span
+                                                                        class="flatpickr-day"
+                                                                        aria-label="March 14, 2024"
+                                                                        tabindex="-1">14</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 15, 2024">15</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 16, 2024">16</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 17, 2024">17</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 18, 2024">18</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 19, 2024">19</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 20, 2024">20</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 21, 2024">21</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 22, 2024">22</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 23, 2024">23</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 24, 2024">24</span><span
+                                                                        class="flatpickr-day"
+                                                                        aria-label="March 25, 2024"
+                                                                        tabindex="-1">25</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 26, 2024">26</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 27, 2024">27</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 28, 2024">28</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 29, 2024">29</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 30, 2024">30</span><span
+                                                                        class="flatpickr-day flatpickr-disabled"
+                                                                        aria-label="March 31, 2024">31</span><span
+                                                                        class="flatpickr-day nextMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="April 1, 2024">1</span><span
+                                                                        class="flatpickr-day nextMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="April 2, 2024">2</span><span
+                                                                        class="flatpickr-day nextMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="April 3, 2024">3</span><span
+                                                                        class="flatpickr-day nextMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="April 4, 2024">4</span><span
+                                                                        class="flatpickr-day nextMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="April 5, 2024">5</span><span
+                                                                        class="flatpickr-day nextMonthDay hidden flatpickr-disabled"
+                                                                        aria-label="April 6, 2024">6</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="calendar-events"> -->
+                                                <div class="d-flex justify-content-start"
+                                                    style="margin-left: 5rem;padding-top: 2rem;">
+                                                    <button
+                                                        style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">Exact
+                                                        dates</button>
+                                                    <button
+                                                        style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">1
+                                                        day</button>
+                                                    <button
+                                                        style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">2
+                                                        days</button>
+                                                    <button
+                                                        style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">3
+                                                        days</button>
+                                                    <button
+                                                        style="border:1px solid #ccc;outline:none;padding:0.3rem 1.3rem;border-radius:20px;background-color:transparent;margin:5px;">7
+                                                        days</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="two-tab">
+                                    <div class="container mt-5 d-flex justify-content-center align-items-center">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <h5 class="text-center">Whats your trip?</h5>
+                                                <div class="c-rng--circular c-rng__wrapper" data-value="75"
+                                                    style="--rng-thumb-w: 2rem; --angle: -15deg; --gradient-end: 75deg;">
+                                                    <output class="c-rng--circular-output" tabindex="0"></output><input
+                                                        type="range" class="c-rng" min="0" max="360" step="1" value="75"
+                                                        data-range="circular" id="870641c6-cfbf-4f4e-a601-bdcbf6dcd92a"
+                                                        hidden="">
+                                                </div>
 
+                                                <!-- <input type="range" class="c-rng" min="0" max="100" step="1" value="82" data-range="circular" data-modifier="c-rng--tomato" />
+                                                
+                                                <input type="range" class="c-rng" min="0" max="150" step="1" value="50" data-range="circular" data-modifier="c-rng--darkcyan" /> -->
+                                                <h5 class="text-center">Starting March 1
+                                                    <a href="" style="color: #000;">Edit</a>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="three-tab">
+                                    <h6 class="text-center mt-5">Stay for a month</h6>
+                                    <div class="d-flex justify-content-center flex-row">
+                                        <button
+                                            style="border :1px solid #ccc;outline: none;padding: 0.5rem 1.5rem; border-radius: 20px;background-color: transparent;margin: 5px;">Weekend</button>
+                                        <button
+                                            style="border :1px solid #ccc;outline: none;padding: 0.5rem 1.5rem; border-radius: 20px;background-color: transparent;margin: 5px;">Week</button>
+                                        <button
+                                            style="border :1px solid #ccc;outline: none;padding: 0.5rem 1.5rem; border-radius: 20px;background-color: transparent;margin: 5px;">Month</button>
+                                    </div>
+                                    <h5 class="text-center" style="color: #000;margin-top: 2rem;">
+                                        Go anytime
+                                    </h5>
+                                    <div class="container calender-div">
+                                        <div class="row swiper mySwiper">
+                                            <div class="col-lg-3 swiper-wrapper">
+                                                <div class="slider-div swiper-slide ">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>January</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>February</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>March</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>April</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>May</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>June</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>July</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>August</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>September</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>October</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>November</h6>
+                                                </div>
+                                                <div class="slider-div swiper-slide">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <h6>December</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -932,133 +1313,151 @@
     </footer>
     <!-- ============================================================= -->
     <div class="container mt-2">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-                    role="tab" aria-controls="home" aria-selected="true">
-                    <div class="d-flex flex-column tb-div">
-                        <div class="nav-img">
-                            <img src="./assets/images/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt="">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="1-tab" data-bs-toggle="tab" data-bs-target="#one-1"
+                        type="button" role="tab" aria-controls="1" aria-selected="true">
+                        <div class="d-flex flex-column tb-div">
+                            <div class="nav-img">
+                                <img src="./assets/images/c0a24c04-ce1f-490c-833f-987613930eca.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>National Park</h5>
+                            </div>
                         </div>
-                        <div>
-                            <h5>National Park</h5>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="2-tab" data-bs-toggle="tab" data-bs-target="#two-2" type="button"
+                        role="tab" aria-controls="2" aria-selected="false">
+                        <div class="d-flex flex-column tb-div">
+                            <div class="nav-img">
+                                <img src="./assets/images/1.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Trending</h5>
+                            </div>
                         </div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
-                    role="tab" aria-controls="profile" aria-selected="false">
-                    <div class="d-flex flex-column tb-div">
-                        <div class="nav-img">
-                            <img src="./assets/images/1.jpg" alt="">
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="3-tab" data-bs-toggle="tab" data-bs-target="#three-3" type="button"
+                        role="tab" aria-controls="3" aria-selected="false">
+                        <div class="d-flex flex-column tb-div">
+                            <div class="nav-img">
+                                <img src="./assets/images/2.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>OMG!</h5>
+                            </div>
                         </div>
-                        <div>
-                            <h5>Trending</h5>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="4-tab" data-bs-toggle="tab" data-bs-target="#four-4" type="button"
+                        role="tab" aria-controls="4" aria-selected="false">
+                        <div class="d-flex flex-column tb-div">
+                            <div class="nav-img">
+                                <img src="./assets/images/3.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Earth Home</h5>
+                            </div>
                         </div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
-                    role="tab" aria-controls="contact" aria-selected="false">
-                    <div class="d-flex flex-column tb-div">
-                        <div class="nav-img">
-                            <img src="./assets/images/2.jpg" alt="">
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="5-tab" data-bs-toggle="tab" data-bs-target="#five-5" type="button"
+                        role="tab" aria-controls="5" aria-selected="false">
+                        <div class="d-flex flex-column tb-div">
+                            <div class="nav-img">
+                                <img src="./assets/images/4.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Lake</h5>
+                            </div>
                         </div>
-                        <div>
-                            <h5>OMG!</h5>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="6-tab" data-bs-toggle="tab" data-bs-target="#six-6" type="button"
+                        role="tab" aria-controls="6" aria-selected="false">
+                        <div class="d-flex flex-column tb-div">
+                            <div class="nav-img">
+                                <img src="./assets/images/4.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Beachfront</h5>
+                            </div>
                         </div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="earth-tab" data-bs-toggle="tab" data-bs-target="#earth" type="button"
-                    role="tab" aria-controls="earth" aria-selected="false">
-                    <div class="d-flex flex-column tb-div">
-                        <div class="nav-img">
-                            <img src="./assets/images/3.jpg" alt="">
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="7-tab" data-bs-toggle="tab" data-bs-target="#seven-7" type="button"
+                        role="tab" aria-controls="7" aria-selected="false">
+                        <div class="d-flex flex-column tb-div">
+                            <div class="nav-img">
+                                <img src="./assets/images/5.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Amazing view</h5>
+                            </div>
                         </div>
-                        <div>
-                            <h5>Earth Home</h5>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="8-tab" data-bs-toggle="tab" data-bs-target="#eight-8" type="button"
+                        role="tab" aria-controls="8" aria-selected="false">
+                        <div class="d-flex flex-column tb-div">
+                            <div class="nav-img">
+                                <img src="./assets/images/5.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Ting house</h5>
+                            </div>
                         </div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="lake-tab" data-bs-toggle="tab" data-bs-target="#lake" type="button"
-                    role="tab" aria-controls="lake" aria-selected="false">
-                    <div class="d-flex flex-column tb-div">
-                        <div class="nav-img">
-                            <img src="./assets/images/4.jpg" alt="">
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="9-tab" data-bs-toggle="tab" data-bs-target="#nine-9" type="button"
+                        role="tab" aria-controls="9" aria-selected="false">
+                        <div class="d-flex flex-column tb-div">
+                            <div class="nav-img">
+                                <img src="./assets/images/6.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Bed & breakfasts</h5>
+                            </div>
                         </div>
-                        <div>
-                            <h5>Lake</h5>
-                        </div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="beachfront-tab" data-bs-toggle="tab" data-bs-target="#beachfront"
-                    type="button" role="tab" aria-controls="beachfront" aria-selected="false">
-                    <div class="d-flex flex-column tb-div">
-                        <div class="nav-img">
-                            <img src="./assets/images/4.jpg" alt="">
-                        </div>
-                        <div>
-                            <h5>Beachfront</h5>
-                        </div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="amazingview-tab" data-bs-toggle="tab" data-bs-target="#amazingview"
-                    type="button" role="tab" aria-controls="amazingview" aria-selected="false">
-                    <div class="d-flex flex-column tb-div">
-                        <div class="nav-img">
-                            <img src="./assets/images/5.jpg" alt="">
-                        </div>
-                        <div>
-                            <h5>Amazing view</h5>
-                        </div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="tinghouse-tab" data-bs-toggle="tab" data-bs-target="#tinghouse"
-                    type="button" role="tab" aria-controls="tinghouse" aria-selected="false">
-                    <div class="d-flex flex-column tb-div">
-                        <div class="nav-img">
-                            <img src="./assets/images/5.jpg" alt="">
-                        </div>
-                        <div>
-                            <h5>Ting house</h5>
-                        </div>
-                    </div>
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="bed&breakfasts-tab" data-bs-toggle="tab" data-bs-target="#bed&breakfasts"
-                    type="button" role="tab" aria-controls="bed&breakfasts" aria-selected="false">
-                    <div class="d-flex flex-column tb-div">
-                        <div class="nav-img">
-                            <img src="./assets/images/6.jpg" alt="">
-                        </div>
-                        <div>
-                            <h5>Bed & breakfasts</h5>
-                        </div>
-                    </div>
-                </button>
-            </li>
-        </ul>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="filters-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                            class="fa-solid fa-list"></i>
+                        Filters</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="taxes">
+                        Display total before taxes
+                    </button>
+                </li>
+            </ul>
+        </div>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade show active" id="one-1" role="tabpanel" aria-labelledby="1-tab">
                 <div class="container mt-4">
                     <div class="row">
                         <div class="col-lg-3">
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/9.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1074,6 +1473,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/10.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1089,6 +1494,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/11.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1104,6 +1515,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/12.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1121,6 +1538,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/9.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1136,6 +1559,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/10.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1151,6 +1580,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/11.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1166,6 +1601,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/12.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1183,6 +1624,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/9.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1198,6 +1645,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/10.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1213,6 +1666,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/11.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1228,6 +1687,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/12.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1245,6 +1710,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/9.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1260,6 +1731,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/10.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1275,6 +1752,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/11.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1290,6 +1773,12 @@
                             <div class="card" style="width: 18rem;" id="card">
                                 <div class="main-card-div">
                                     <div class="card-div">
+                                        <div class="guest">
+                                            <div class="d-flex justify-content-between guest-btn align-items-center">
+                                                <div><button>Guest favorite</button></div>
+                                                <div><i class="fa-regular fa-heart"></i></div>
+                                            </div>
+                                        </div>
                                         <img src="./assets/images/12.webp" class="card-img-top" alt="...">
                                     </div>
                                 </div>
@@ -1304,16 +1793,66 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"></div>
-            <div class="tab-pane fade" id="earth" role="tabpanel" aria-labelledby="earth-tab"></div>
-            <div class="tab-pane fade" id="lake" role="tabpanel" aria-labelledby="lake-tab"></div>
-            <div class="tab-pane fade" id="beachfront" role="tabpanel" aria-labelledby="beachfront-tab"></div>
-            <div class="tab-pane fade" id="amazingview" role="tabpanel" aria-labelledby="amazingview-tab"></div>
-            <div class="tab-pane fade" id="tinghouse" role="tabpanel" aria-labelledby="tinghouse-tab"></div>
-            <div class="tab-pane fade" id="bed&breakfasts" role="tabpanel" aria-labelledby="bed&breakfasts-tab"></div>
+            <div class="tab-pane fade" id="two-2" role="tabpanel" aria-labelledby="2-tab"></div>
+            <div class="tab-pane fade" id="three-3" role="tabpanel" aria-labelledby="3-tab"></div>
+            <div class="tab-pane fade" id="four-4" role="tabpanel" aria-labelledby="4-tab"></div>
+            <div class="tab-pane fade" id="five-5" role="tabpanel" aria-labelledby="5-tab"></div>
+            <div class="tab-pane fade" id="six-6" role="tabpanel" aria-labelledby="6-tab"></div>
+            <div class="tab-pane fade" id="seven-7" role="tabpanel" aria-labelledby="7-tab"></div>
+            <div class="tab-pane fade" id="eight-8" role="tabpanel" aria-labelledby="8-tab"></div>
+            <div class="tab-pane fade" id="nine-9" role="tabpanel" aria-labelledby="9-tab"></div>
         </div>
     </div>
+    <!-- Modal Html -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="d-flex justify-content-start"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="d-flex justify-content-center"><h6 class="modal-title" id="exampleModalLabel">Filters</h6></div>
+                </div>
+                <div class="modal-body">
+                    <h6>Type of place</h6>
+                    <span style="font-size: 12px;">Search rooms, entire homes, or any type of place.</span>
+                    <div class="container">
+                        <div class="row">
+                            <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                                        aria-selected="true">Any type</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false">Room</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                        aria-controls="contact-tab-pane" aria-selected="false">Entire home</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                    aria-labelledby="home-tab" tabindex="0">...</div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                                    tabindex="0">...</div>
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                                    tabindex="0">...</div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Html -->
     <!-- ============================================================= -->
     <!-- =========================jQuery============================== -->
     <script src="./assets/js/jquery.min.js"></script>
