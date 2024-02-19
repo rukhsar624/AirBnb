@@ -419,3 +419,35 @@ var swiper = new Swiper(".mySwiper", {
 // 
 // new swiper slider js open
 // new swiper slider js closed
+// button js open 
+var $buttonRow1 = $('.button-row1');
+var $activeButton1 = $buttonRow1.find('.button.is-active');
+
+$buttonRow1.on( 'click', '.button', function( event ) {
+  // deactivate previous button
+  $activeButton1.removeClass('is-active');
+  // set & activate new button
+  $activeButton1 = $( this );
+  $activeButton1.addClass('is-active');
+});
+
+var $buttonRow2 = $('.button-row2');
+var $activeButton2 = $buttonRow2.find('.button.is-active');
+
+$buttonRow2.on( 'click', '.button', function( event ) {
+  $activeButton2.removeClass('is-active');
+  $activeButton2 = $( this );
+  $activeButton2.addClass('is-active');
+});
+
+
+var $buttonRow3 = $('.button-row3');
+var $activeButton3 = $buttonRow3.find('.button.is-active');
+
+$buttonRow3.on( 'click', '.button', function( event ) {
+  $activeButton3.removeClass('is-active');
+  $activeButton3 = $( this );
+  $activeButton3.addClass('is-active');
+});
+
+// button js closed

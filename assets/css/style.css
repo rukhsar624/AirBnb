@@ -150,9 +150,11 @@
         z-index: 1;
         cursor: pointer;
     }
+
     .button i {
         color: #fff;
     }
+
     .button::before {
         /* content: "🔍"; */
         /* Obv not the best icon to use but the icons aren't the point */
@@ -215,47 +217,108 @@
     .third-div button:hover {
         background-color: WhiteSmoke;
     }
-.calender-div .slider-div{
-    width: 120px !important;
-    height: 134px;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    flex-direction: column;
-}
-.calender-div .slider-div i{
-    font-size: 30px;
-}
-.calender-div .slider-div h6{
-    font-size: 15px;
-}
-.modal-button  .nav-tabs{
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 0px;
-}
-#modal-button li {
-    width: 230px;
-    display: flex;
-}
-.modal-button ul li button {
-    width: 33.33%;
-    background-color: #000;
-}
-.modal-button .nav-tabs .nav-link, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
-{
-    width: 230px ;
-    height: 50px !important;
-}
-.modal-button .nav-tabs .nav-link.active{
-    width: 230px;
-    height: 50px !important;
-    background-color: #000;
-    color: #fff;
-}
-.filter-inner-div h5{
-    padding-top: 10px;
 
+    .calender-div .slider-div {
+        width: 120px !important;
+        height: 134px;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+
+    .calender-div .slider-div i {
+        font-size: 30px;
+    }
+
+    .calender-div .slider-div h6 {
+        font-size: 15px;
+    }
+
+    .modal-button .nav-tabs {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 0px;
+    }
+
+    #modal-button li {
+        width: 230px;
+        display: flex;
+    }
+
+    .modal-button ul li button {
+        width: 33.33%;
+        background-color: #000;
+    }
+
+    .modal-button .nav-tabs .nav-link,
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        width: 230px;
+        height: 50px !important;
+    }
+
+    .modal-button .nav-tabs .nav-link.active {
+        width: 230px;
+        height: 50px !important;
+        background-color: #000;
+        color: #fff;
+    }
+
+    .filter-inner-div h5 {
+        padding-top: 10px;
+
+    }
+
+    /* button css  open*/
+    #row-btn .button-row {
+        display: -webkit-box;
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    #row-btn .button {
+        font: sans-serif;
+        font-size: 18px;
+        padding: 10px 15px;
+        background: #F8F8F8;
+        border: 1px solid #DDD;
+        border-right-width: 0;
+        border-radius: 0;
+        background: transparent;
+        color: #000;
+        width: 70px;
+        min-width: 70px;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        margin: 5px;
+        height: 2.5em;
+        font-size: 15px;
+    }
+
+    #row-btn .button:hover {
+        background: #DEF;
+        cursor: pointer;
+    }
+
+    #row-btn .button.is-active {
+        background: #000;
+        color: white;
+        width: 70px;
+        min-width: 70px;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        margin: 5px;
+        font-size: 15px;
+        height: 2.5em;
+    }
+
+    #row-btn .button-row .button:last-child {
+        border-right-width: 1px;
+    }
+.guest-fav{
+    
 }
+    /* button css closed */
