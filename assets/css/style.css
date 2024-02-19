@@ -44,7 +44,7 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 0 2px rgba(0, 0, 0, 0.2);
         cursor: pointer;
         display: flex;
-        height: 3em;
+        height: 3.5em;
         left: 50%;
         max-width: 40%;
         overflow: hidden;
@@ -52,7 +52,8 @@
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 40em;
+        /* width: 40em; */
+        width: 26em;
         transition: all 0.25s;
     }
 
@@ -149,18 +150,20 @@
         z-index: 1;
         cursor: pointer;
     }
-
+    .button i {
+        color: #fff;
+    }
     .button::before {
-        content: "🔍";
+        /* content: "🔍"; */
         /* Obv not the best icon to use but the icons aren't the point */
         font-size: 1.5em;
         transition: all 0.25s;
     }
 
     .top .button {
-        width: 3.75em;
-        height: 3.75em;
-        border-radius: 4.75em;
+        width: 3.1em;
+        height: 3.1em;
+        border-radius: 3.1em;
     }
 
     .top .button::before {
@@ -228,9 +231,31 @@
 .calender-div .slider-div h6{
     font-size: 15px;
 }
-/* swiper slider css*/
+.modal-button  .nav-tabs{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0px;
+}
+#modal-button li {
+    width: 230px;
+    display: flex;
+}
+.modal-button ul li button {
+    width: 33.33%;
+    background-color: #000;
+}
+.modal-button .nav-tabs .nav-link, .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active
+{
+    width: 230px ;
+    height: 50px !important;
+}
+.modal-button .nav-tabs .nav-link.active{
+    width: 230px;
+    height: 50px !important;
+    background-color: #000;
+    color: #fff;
+}
+.filter-inner-div h5{
+    padding-top: 10px;
 
-/* swiper slider css*/
-    /* logo css */
-    /* open div css */
-    /* open div css */
+}

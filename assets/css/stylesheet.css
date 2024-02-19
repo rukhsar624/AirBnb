@@ -75,6 +75,8 @@ body::-webkit-scrollbar-thumb {
 
 .second-div {
     width: 33.33%;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-pills .nav-link.active,
@@ -106,8 +108,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .third-div {
-    width: 33.33%;
-    /* width: 60%; */
+    /* width: 33.33%; */
+    width: 60%;
 }
 
 .third-div button {

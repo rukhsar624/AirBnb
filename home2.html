@@ -365,7 +365,10 @@
                                 </ul>
                             </div>
                             <input class="input" type="text">
-                            <button class="button"></button>
+                            <!-- <button>Anywhere</button>
+                            <button>Anywhere</button>
+                            <button>Anywhere</button> -->
+                            <button class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </label>
                         <div id="hiddenDiv">
                             <div class="container" style="padding: 20px;">
@@ -1806,48 +1809,53 @@
     <!-- Modal Html -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <div class="d-flex justify-content-start"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="d-flex justify-content-center"><h6 class="modal-title" id="exampleModalLabel">Filters</h6></div>
-                </div>
-                <div class="modal-body">
-                    <h6>Type of place</h6>
-                    <span style="font-size: 12px;">Search rooms, entire homes, or any type of place.</span>
-                    <div class="container">
-                        <div class="row">
-                            <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                        data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                                        aria-selected="true">Any type</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
-                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
-                                        aria-controls="profile-tab-pane" aria-selected="false">Room</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
-                                        data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                        aria-controls="contact-tab-pane" aria-selected="false">Entire home</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
-                                    aria-labelledby="home-tab" tabindex="0">...</div>
-                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                                    tabindex="0">...</div>
-                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                                    tabindex="0">...</div>
-                            </div> -->
-                        </div>
+                    <div class="d-flex justify-content-start"><button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="d-flex justify-content-center w-100">
+                        <h6 class="modal-title" id="exampleModalLabel" style="font-weight: bold;">Filters</h6>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-body">
+                    <h6 style="padding-left: 10px;">Type of place</h6>
+                    <span style="font-size: 12px;padding-left: 10px;">Search rooms, entire homes, or any type of place.</span>
+                    <div class="container modal-button
+                    ">
+                        <div class="row" id="row-modal">
+                            <div class="col-lg-11 mx-auto">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation" style="width: 33.33%;">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#home-tab-pane" type="button" role="tab"
+                                            aria-controls="home-tab-pane" aria-selected="true">Any type</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation" style="width: 33.33%;">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                            aria-controls="profile-tab-pane" aria-selected="false">Room</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation" style="width: 33.33%;">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                            aria-controls="contact-tab-pane" aria-selected="false">Entire home</button>
+                                    </li>
+                                </ul>
+                            </div>
+                                <div class="tab-content filter-inner-div" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                        aria-labelledby="home-tab" tabindex="0">
+                                    <h5>Price range</h5>
+                                    <p>Nightly prices before fees and taxes</p>
+                                </div>
+                                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                        aria-labelledby="profile-tab" tabindex="0">...</div>
+                                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                        aria-labelledby="contact-tab" tabindex="0">...</div>
+                                </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
