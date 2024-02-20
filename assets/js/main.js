@@ -410,9 +410,9 @@ var swiper = new Swiper(".mySwiper", {
 			spaceBetween: 10
 
 		},
-		1440:{
-			slidesPerView:6,
-			spaceBetween:10
+		1440: {
+			slidesPerView: 6,
+			spaceBetween: 10
 		}
 	}
 });
@@ -423,31 +423,39 @@ var swiper = new Swiper(".mySwiper", {
 var $buttonRow1 = $('.button-row1');
 var $activeButton1 = $buttonRow1.find('.button.is-active');
 
-$buttonRow1.on( 'click', '.button', function( event ) {
-  // deactivate previous button
-  $activeButton1.removeClass('is-active');
-  // set & activate new button
-  $activeButton1 = $( this );
-  $activeButton1.addClass('is-active');
+$buttonRow1.on('click', '.button', function (event) {
+	// deactivate previous button
+	$activeButton1.removeClass('is-active');
+	// set & activate new button
+	$activeButton1 = $(this);
+	$activeButton1.addClass('is-active');
 });
 
 var $buttonRow2 = $('.button-row2');
 var $activeButton2 = $buttonRow2.find('.button.is-active');
 
-$buttonRow2.on( 'click', '.button', function( event ) {
-  $activeButton2.removeClass('is-active');
-  $activeButton2 = $( this );
-  $activeButton2.addClass('is-active');
+$buttonRow2.on('click', '.button', function (event) {
+	$activeButton2.removeClass('is-active');
+	$activeButton2 = $(this);
+	$activeButton2.addClass('is-active');
 });
 
 
 var $buttonRow3 = $('.button-row3');
 var $activeButton3 = $buttonRow3.find('.button.is-active');
 
-$buttonRow3.on( 'click', '.button', function( event ) {
-  $activeButton3.removeClass('is-active');
-  $activeButton3 = $( this );
-  $activeButton3.addClass('is-active');
+$buttonRow3.on('click', '.button', function (event) {
+	$activeButton3.removeClass('is-active');
+	$activeButton3 = $(this);
+	$activeButton3.addClass('is-active');
 });
 
 // button js closed
+
+// login button js
+document.querySelector('.click').addEventListener('click', function() {
+	// Toggle the display of the login-div
+	var loginDiv = document.querySelector('.login-div');
+	loginDiv.style.display = (loginDiv.style.display === 'block') ? 'none' : 'block';
+});
+// login button js 
